@@ -12,8 +12,10 @@ function init(){
 
     let boton = document.querySelector("#invertir");
 
+    let salida = document.querySelector("#salida");
+
     boton.addEventListener("click", function () {
-        
+        salida.innerHTML = `Palabra invertida: ${invertirPalabra(palabra)}`;
     });
 
 }

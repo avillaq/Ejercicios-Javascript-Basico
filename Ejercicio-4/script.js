@@ -9,7 +9,7 @@ function init(){
         let codigos = patron.exec(codigo);
 
         let codigoFinal = document.querySelector('#codigo');
-        codigoFinal.innerHTML = `Codigo: ${codigos[1]}-${codigos[2]}-${codigos[3]}`;
+        codigoFinal.innerHTML = `Codigo: ${codigos[1]} ${codigos[2]} ${codigos[3]}`;
         
     });
 

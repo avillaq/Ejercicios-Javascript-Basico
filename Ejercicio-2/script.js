@@ -8,6 +8,12 @@ function init(){
         return palabraInvertida;
     }
 
-    let palabra = document.getElementById("entrada").value;
+    let palabra = document.querySelector("#entrada").value;
+
+    let boton = document.querySelector("#invertir");
+
+    boton.addEventListener("click", function () {
+        
+    });
 
 }

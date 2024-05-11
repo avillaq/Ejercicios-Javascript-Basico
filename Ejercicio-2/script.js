@@ -10,7 +10,7 @@ function init(){
 
     let palabra = document.querySelector("#entrada").value;
 
-    let boton = document.querySelector("#invertir");
+    let boton = document.querySelector("#enviar");
 
     let salida = document.querySelector("#salida");
 

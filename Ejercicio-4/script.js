@@ -9,6 +9,10 @@ function init(){
 
         let patron = /([a-z])+-([a-z])+-([a-z])+/g;
 
+        let codigos = patron.exec(codigo);
+
+        console.log(codigos);
+
          
         
     });

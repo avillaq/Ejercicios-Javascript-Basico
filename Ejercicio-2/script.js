@@ -8,6 +8,6 @@ function init(){
         return palabraInvertida;
     }
 
-
+    let palabra = document.getElementById("entrada").value;
 
 }

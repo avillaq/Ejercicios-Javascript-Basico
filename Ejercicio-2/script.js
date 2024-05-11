@@ -8,14 +8,14 @@ function init(){
         return palabraInvertida;
     }
 
-    let palabra = document.querySelector("#entrada").value;
+    let palabra = document.querySelector("#entrada");
 
     let boton = document.querySelector("#enviar");
 
     let salida = document.querySelector("#salida");
 
     boton.addEventListener("click", function () {
-        salida.innerHTML = `Palabra invertida: ${invertirPalabra(palabra)}`;
+        salida.innerHTML = `Palabra invertida: ${invertirPalabra(palabra.value)}`;
     });
 
 }

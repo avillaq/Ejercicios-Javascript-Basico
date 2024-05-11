@@ -8,4 +8,7 @@ function init(){
     let day = date.getDay();
 
     let saludo = document.querySelector("#saludo");
+    saludo.innerHTML = `Hola, hoy es ${obtenerDia(day)}`;
+
+    console.log(`Hola, hoy es ${obtenerDia(day)}`);
 }

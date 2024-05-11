@@ -9,5 +9,8 @@ function init(){
     let hora = minuto * 60;
     let dia = hora * 24;
 
+    let diasFaltantes = (diaArequipa - diaHoy) / dia;
 
+    let dias = document.querySelector('#dias');
+    dias.innerHTML = diasFaltantes;
 }

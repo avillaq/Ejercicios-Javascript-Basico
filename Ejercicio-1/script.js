@@ -7,4 +7,5 @@ function init(){
     let date = new Date();
     let day = date.getDay();
 
+    let saludo = document.querySelector("#saludo");
 }

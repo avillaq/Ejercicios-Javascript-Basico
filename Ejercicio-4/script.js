@@ -4,16 +4,12 @@ function init(){
     let boton = document.querySelector('#boton');    
     boton.addEventListener('click',function(){
         let codigo = document.querySelector('#entrada').value;
-        
-        //https://meet.google.com/xog-becr-xff
 
-        let patron = /([a-z])+-([a-z])+-([a-z])+/g;
-
+        let patron = /([a-z]+)-([a-z]+)-([a-z]+)/g;
         let codigos = patron.exec(codigo);
 
-        console.log(codigos);
-
-         
+        let codigoFinal = document.querySelector('#codigo');
+        codigoFinal.innerHTML = `Codigo: ${codigos[1]}-${codigos[2]}-${codigos[3]}`;
         
     });
 

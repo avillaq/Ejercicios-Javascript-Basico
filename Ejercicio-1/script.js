@@ -4,6 +4,7 @@ function init(){
         let dias = ["Domingo","Lunes","Martes","Miercoles","Jueves","Viernes","Sabado"];
         return dias[n];
     }
+    let date = new Date();
+    let day = date.getDay();
 
-    
 }

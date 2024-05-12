@@ -32,7 +32,7 @@ function init(){
         }
     });
 
-    
+    let resultado = document.querySelector('#resultado');
     let btnSuma = document.querySelector('#btnSuma');
     btnSuma.addEventListener('click',function(){
         let totalCeldas = document.querySelectorAll('td');
@@ -40,6 +40,7 @@ function init(){
         for (let i = 0; i < totalCeldas.length; i++) {
             sumaTotal += parseInt(totalCeldas[i].textContent);
         }
+        resultado.innerHTML = `La suma total de los valores es: <strong>${sumaTotal}</strong>`;
         
     });
 
@@ -51,7 +52,7 @@ function init(){
     }
 
     function obtenerAleatorio() {
-        return Math.floor(Math.random()*100)+1;
+        return Math.floor(Math.random()*1000)+1;
     }
 
 }

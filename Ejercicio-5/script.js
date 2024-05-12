@@ -1,6 +1,10 @@
 document.addEventListener('DOMContentLoaded',init);
 function init(){
 
+    let cuerpoTabla = document.querySelector('#cuerpoTabla');
+    let resultado = document.querySelector('#resultado');
+    let btnSuma = document.querySelector('#btnSuma');
+
     let form = document.querySelector('#form');
     form.addEventListener('submit',function(event){
         event.preventDefault();
@@ -12,8 +16,8 @@ function init(){
         let resto = numeroValores % col;
         let fil = (numeroValores - resto)/col;
 
-        let cuerpoTabla = document.querySelector('#cuerpoTabla');
         cuerpoTabla.innerHTML = "";
+        resultado.innerHTML = "";
 
         for (let i = 0; i < fil; i++) {
             let filaTabla = document.createElement('tr');
@@ -32,8 +36,7 @@ function init(){
         }
     });
 
-    let resultado = document.querySelector('#resultado');
-    let btnSuma = document.querySelector('#btnSuma');
+    
     btnSuma.addEventListener('click',function(){
         let totalCeldas = document.querySelectorAll('td');
         let sumaTotal = 0;

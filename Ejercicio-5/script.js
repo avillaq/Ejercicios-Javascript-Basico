@@ -32,6 +32,17 @@ function init(){
         }
     });
 
+    
+    let btnSuma = document.querySelector('#btnSuma');
+    btnSuma.addEventListener('click',function(){
+        let totalCeldas = document.querySelectorAll('td');
+        let sumaTotal = 0;
+        for (let i = 0; i < totalCeldas.length; i++) {
+            sumaTotal += parseInt(totalCeldas[i].textContent);
+        }
+        
+    });
+
     function crearCelda() {
         let celda = document.createElement('td');
         celda.style.border = "1px solid black";

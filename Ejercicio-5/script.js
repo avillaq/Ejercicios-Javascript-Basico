@@ -17,9 +17,19 @@ function init(){
 
         let resto = numeroValores % col;
         let fil = (numeroValores - resto)/col;
-        
 
-        
+        let cuerpoTabla = document.querySelector('#cuerpoTabla');
+
+        for (let i = 0; i < fil; i++) {
+            let filaTabla = document.createElement('tr');
+            cuerpoTabla.appendChild(filaTabla);
+            for (let j = 0; j < col; j++) {
+                let celda = document.createElement('td');
+                celda.textContent = "prueba";
+                filaTabla.appendChild(celda);
+            }
+            
+        }
 
 
     });

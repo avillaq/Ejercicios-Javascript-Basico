@@ -26,7 +26,7 @@ function init(){
             for (let j = 0; j < col; j++) {
                 let celda = document.createElement('td');
                 celda.style.border = "1px solid black";
-                celda.textContent = "prueba";
+                celda.textContent = obtnerAleatorio();
                 filaTabla.appendChild(celda);
             }
         }
@@ -37,12 +37,15 @@ function init(){
             for (let i = 0; i < resto; i++) {
                 let celda = document.createElement('td');
                 celda.style.border = "1px solid black";
-                celda.textContent = "prueba";
+                celda.textContent = obtnerAleatorio();
                 filaTabla.appendChild(celda);
             }
         }
     });
 
 
+    function obtnerAleatorio() {
+        return Math.floor(Math.random()*100)+1;
+    }
 
 }

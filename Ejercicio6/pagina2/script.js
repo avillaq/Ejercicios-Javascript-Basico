@@ -14,11 +14,22 @@ function init(){
                                 <option value="modulo">Modulo</option>
                                 `
         } else if (valor === "operacionLogica") {
-            console.log("Logica");
+            operacion.innerHTML = `
+                                <option value="and">And</option>
+                                <option value="or">Or</option>
+                                `
         } else{
-            console.log("De bits");
+            operacion.innerHTML = `
+                                <option value="desplazamientoIzquierda">Desplazamiento a la izquierda</option>
+                                <option value="desplazamientoDerecha">Desplazamiento a la derecha</option>
+                                `
         }
+    });
 
+    let btnCalcular = document.querySelector("#btnCalcular");
+    let resultado = document.querySelector("#resultado");
+
+    btnCalcular.addEventListener("click",function(){
     });
     
 

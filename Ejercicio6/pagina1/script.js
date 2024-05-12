@@ -11,4 +11,12 @@ function init(){
         textoPrueba.style.fontSize = `${fontSize}px`;
     });
 
+    btnReducir.addEventListener('click',function(){
+        let fontSize = window.getComputedStyle(textoPrueba).fontSize;
+        fontSize = parseInt(fontSize);
+        fontSize -= 5;
+        textoPrueba.style.fontSize = `${fontSize}px`;
+    });
+
+
 }

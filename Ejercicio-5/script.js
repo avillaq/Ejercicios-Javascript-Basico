@@ -28,7 +28,16 @@ function init(){
                 celda.textContent = "prueba";
                 filaTabla.appendChild(celda);
             }
-            
+        }
+
+        if(resto > 0){
+            let filaTabla = document.createElement('tr');
+            cuerpoTabla.appendChild(filaTabla);
+            for (let i = 0; i < resto; i++) {
+                let celda = document.createElement('td');
+                celda.textContent = "prueba";
+                filaTabla.appendChild(celda);
+            }
         }
 
 

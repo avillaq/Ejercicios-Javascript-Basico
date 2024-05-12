@@ -17,6 +17,7 @@ function init(){
 
         let resto = numeroValores % col;
         let fil = (numeroValores - resto)/col;
+        
 
         
 

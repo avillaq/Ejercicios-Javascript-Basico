@@ -6,6 +6,17 @@ function init(){
         event.preventDefault();
         let numeroValores = document.querySelector('#numeroValores').value;
         numeroValores = parseInt(numeroValores);
+
+        let col = 0;
+        for (let i = 0; i < limiteColumnas.length; i++) {
+            if(limiteColumnas[i] >= numeroValores){
+                col = i+1;
+                break;
+            }
+        }
+        
+
+
     });
 
 

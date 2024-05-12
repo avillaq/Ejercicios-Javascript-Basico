@@ -24,6 +24,7 @@ function init(){
                                 <option value="desplazamientoDerecha">Desplazamiento a la derecha</option>
                                 `
         }
+        resultado.innerHTML = "";
     });
 
     let btnCalcular = document.querySelector("#btnCalcular");
@@ -31,36 +32,38 @@ function init(){
 
     btnCalcular.addEventListener("click",function(){
         let valor1 = document.querySelector("#valor1").value;
+        valor1 = parseInt(valor1);
         let valor2 = document.querySelector("#valor2").value;
+        valor2 = parseInt(valor2);
         let operacion = document.querySelector("#operacion").value;
 
         switch (operacion) {
             case "suma":
-
+                resultado.innerHTML = `${valor1+valor2}`;
                 break;
             case "resta":
-
+                resultado.innerHTML = `${valor1-valor2}`;
                 break;
             case "multiplicacion":
-
+                resultado.innerHTML = `${valor1*valor2}`;
                 break;
             case "division":
-
+                resultado.innerHTML = `${valor1/valor2}`;
                 break;
             case "modulo":
-
+                resultado.innerHTML = `${valor1%valor2}`;
                 break;
             case "and":
-
+                resultado.innerHTML = `${valor1&valor2}`;
                 break;
             case "or":
-
+                resultado.innerHTML = `${valor1|valor2}`;
                 break;
             case "desplazamientoIzquierda":
-
+                resultado.innerHTML = `${valor1<<valor2}`;
                 break;
             case "desplazamientoDerecha":
-                
+                resultado.innerHTML = `${valor1>>valor2}`;
                 break;
             default:
                 break;

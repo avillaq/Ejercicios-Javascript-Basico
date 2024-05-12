@@ -40,8 +40,7 @@ function init(){
 
         valor1 = parseInt(valor1);
         valor2 = parseInt(valor2);
-
-        console.log(valor1,valor2);
+        
         let operacion = document.querySelector("#operacion").value;
 
         switch (operacion) {
@@ -61,9 +60,17 @@ function init(){
                 resultado.innerHTML = `${valor1%valor2}`;
                 break;
             case "and":
+                if (valor1 !== 0 && valor1 !== 1 || valor2 !== 0 && valor2 !== 1) {
+                    alert("Ambos valores deben ser 0 o 1");
+                    return;
+                }
                 resultado.innerHTML = `${valor1&valor2}`;
                 break;
             case "or":
+                if (valor1 !== 0 && valor1 !== 1 || valor2 !== 0 && valor2 !== 1) {
+                    alert("Ambos valores deben ser 0 o 1");
+                    return;
+                }
                 resultado.innerHTML = `${valor1|valor2}`;
                 break;
             case "desplazamientoIzquierda":
@@ -77,8 +84,4 @@ function init(){
         }
 
     });
-    
-
-
-
 }

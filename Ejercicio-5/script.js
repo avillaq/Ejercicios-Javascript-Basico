@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded',init);
 function init(){
-    
+
     let form = document.querySelector('#form');
     form.addEventListener('submit',function(event){
         event.preventDefault();
@@ -19,10 +19,7 @@ function init(){
             let filaTabla = document.createElement('tr');
             cuerpoTabla.appendChild(filaTabla);
             for (let j = 0; j < col; j++) {
-                let celda = document.createElement('td');
-                celda.style.border = "1px solid black";
-                celda.textContent = obtenerAleatorio();
-                filaTabla.appendChild(celda);
+                filaTabla.appendChild(crearCelda());
             }
         }
 
@@ -30,14 +27,17 @@ function init(){
             let filaTabla = document.createElement('tr');
             cuerpoTabla.appendChild(filaTabla);
             for (let i = 0; i < resto; i++) {
-                let celda = document.createElement('td');
-                celda.style.border = "1px solid black";
-                celda.textContent = obtenerAleatorio();
-                filaTabla.appendChild(celda);
+                filaTabla.appendChild(crearCelda());
             }
         }
     });
 
+    function crearCelda() {
+        let celda = document.createElement('td');
+        celda.style.border = "1px solid black";
+        celda.textContent = obtenerAleatorio();
+        return celda;
+    }
 
     function obtenerAleatorio() {
         return Math.floor(Math.random()*100)+1;

@@ -30,6 +30,10 @@ function init(){
     let resultado = document.querySelector("#resultado");
 
     btnCalcular.addEventListener("click",function(){
+        let valor1 = document.querySelector("#valor1").value;
+        let valor2 = document.querySelector("#valor2").value;
+        let operacion = document.querySelector("#operacion").value;
+
     });
     
 

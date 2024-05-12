@@ -5,18 +5,19 @@ function init(){
     let btnReducir = document.querySelector('#btnReducir');
 
     btnAumentar.addEventListener('click',function(){
-        let fontSize = window.getComputedStyle(textoPrueba).fontSize;
-        fontSize = parseInt(fontSize);
-        fontSize += 5;
-        textoPrueba.style.fontSize = `${fontSize}px`;
+        cambiarTamaño(5);
     });
 
     btnReducir.addEventListener('click',function(){
+        cambiarTamaño(-5);
+    });
+
+    function cambiarTamaño(n) {
         let fontSize = window.getComputedStyle(textoPrueba).fontSize;
         fontSize = parseInt(fontSize);
-        fontSize -= 5;
+        fontSize += n;
         textoPrueba.style.fontSize = `${fontSize}px`;
-    });
+    }
 
 
 }

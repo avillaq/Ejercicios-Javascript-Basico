@@ -34,6 +34,38 @@ function init(){
         let valor2 = document.querySelector("#valor2").value;
         let operacion = document.querySelector("#operacion").value;
 
+        switch (operacion) {
+            case "suma":
+
+                break;
+            case "resta":
+
+                break;
+            case "multiplicacion":
+
+                break;
+            case "division":
+
+                break;
+            case "modulo":
+
+                break;
+            case "and":
+
+                break;
+            case "or":
+
+                break;
+            case "desplazamientoIzquierda":
+
+                break;
+            case "desplazamientoDerecha":
+                
+                break;
+            default:
+                break;
+        }
+
     });
     
 

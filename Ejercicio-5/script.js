@@ -25,6 +25,7 @@ function init(){
             cuerpoTabla.appendChild(filaTabla);
             for (let j = 0; j < col; j++) {
                 let celda = document.createElement('td');
+                celda.style.border = "1px solid black";
                 celda.textContent = "prueba";
                 filaTabla.appendChild(celda);
             }
@@ -35,12 +36,11 @@ function init(){
             cuerpoTabla.appendChild(filaTabla);
             for (let i = 0; i < resto; i++) {
                 let celda = document.createElement('td');
+                celda.style.border = "1px solid black";
                 celda.textContent = "prueba";
                 filaTabla.appendChild(celda);
             }
         }
-
-
     });
 
 

@@ -5,7 +5,8 @@ function init(){
     let btnReducir = document.querySelector('#btnReducir');
 
     btnAumentar.addEventListener('click',function(){
-        let fontSize = textoPrueba.style.fontSize;
+        let fontSize = window.getComputedStyle(textoPrueba).fontSize;
+        fontSize = parseInt(fontSize);
         fontSize += 5;
         textoPrueba.style.fontSize = `${fontSize}px`;
     });

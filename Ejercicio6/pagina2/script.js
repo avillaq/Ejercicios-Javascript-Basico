@@ -32,9 +32,16 @@ function init(){
 
     btnCalcular.addEventListener("click",function(){
         let valor1 = document.querySelector("#valor1").value;
-        valor1 = parseInt(valor1);
         let valor2 = document.querySelector("#valor2").value;
+        if (valor1 === "" || valor2 === "") {
+            alert("Ingrese ambos valores");
+            return;
+        }
+
+        valor1 = parseInt(valor1);
         valor2 = parseInt(valor2);
+
+        console.log(valor1,valor2);
         let operacion = document.querySelector("#operacion").value;
 
         switch (operacion) {

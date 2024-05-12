@@ -12,6 +12,23 @@ function init(){
         cambiarTamaño(-5);
     });
 
+    let btnRojo = document.querySelector('#btnRojo');
+    let btnAzul = document.querySelector('#btnAzul');
+    let btnVerde = document.querySelector('#btnVerde');
+
+    btnRojo.addEventListener('click',function(){
+        textoPrueba.style.color = 'red';
+    });
+
+    btnAzul.addEventListener('click',function(){
+        textoPrueba.style.color = 'blue';
+    });
+
+    btnVerde.addEventListener('click',function(){
+        textoPrueba.style.color = 'green';
+    });
+
+
     function cambiarTamaño(n) {
         let fontSize = window.getComputedStyle(textoPrueba).fontSize;
         fontSize = parseInt(fontSize);
